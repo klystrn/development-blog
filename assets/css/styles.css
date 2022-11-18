@@ -1104,24 +1104,7 @@ img{
         padding: 3.5rem;
     }
     .services__modal{
-        padding: 0 .5rem;
-    }
-    
-    .testimonial__data,
-    .testimonial__header{
-        flex-direction: column;
-        align-items: left;
-        padding: 1rem;
-    }
-
-    .testimonial__img{
-        align-self: left;
-    }
-
-    .testimonial__data,
-    .testimonial__description{
-        text-align: left;
-        padding: 1rem;
+        padding: 0.5rem 0.5rem;
     }
 }
 
@@ -1148,16 +1131,16 @@ img{
     .skills__container,
     .portfolio__content,
     .footer__container{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 
     .qualification__sections{
         display: grid;
-        grid-template-columns: .75fr;
+        grid-template-columns: 1fr;
         justify-content: center;
     }
 
-    @media screen and (min-width: 1286px){
+    @media screen and (min-width: 924px){
         .container{
             margin-left: auto;
             margin-right: auto;
@@ -1168,7 +1151,7 @@ img{
         }
 
         .section{
-            padding: 6rem 0  2rem;
+            padding: 6rem 0 2rem;
         }
         .section__subtitle{
             margin-bottom: 4rem;
@@ -1267,7 +1250,7 @@ img{
             font-size: 2rem;
         }
         .services__content{
-            padding: 6rem 0 2rem 2.5rem;
+            padding: 6rem 0.5rem 2rem 2.5rem;
         }
 
         .portfolio__content{
