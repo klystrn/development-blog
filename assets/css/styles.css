@@ -352,7 +352,9 @@ img{
 }
 
 .home__blob-img{
-    width: 100px;
+    height: 90%;
+    width: 90%;
+    transform: translateY(10px);
 }
 
 .home__blob:hover{
@@ -667,8 +669,6 @@ img{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2);
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
 }
 
 .qualification__button{
@@ -694,7 +694,7 @@ img{
 
 .qualification__data{
     display: grid;
-    grid-template-columns: 2fr max-content 2fr;
+    grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 }
 
@@ -702,6 +702,16 @@ img{
     font-size: var(--normal-font-size);
     font-weight: medium;
     margin-bottom: var(--mb-0-75);
+}
+
+.qualification__title:hover{
+    transform: scaleY(0.1rem);
+    transition: .3s;
+    cursor: default;
+}
+
+.qualification__title:not(:hover){
+    transition: .3s;
 }
 
 .qualification__subtitle{
@@ -1052,7 +1062,7 @@ img{
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 568px){
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -1069,7 +1079,14 @@ img{
         grid-template-columns: .25fr 3fr;
     }
     .home__blob{
-        width: 180px;
+        height: 75%;
+        width: 75%;
+        transform: translateY(-30px);
+    }
+    .home__blob-img{
+        height: 100%;
+        width: 100%;
+        transform: translateY(10px);
     }
     .skills__title{
         font-size: var(--normal-font-size);
@@ -1109,7 +1126,7 @@ img{
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px){
+@media screen and (min-width: 724px){
     .home__content{
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -1131,7 +1148,7 @@ img{
     .skills__container,
     .portfolio__content,
     .footer__container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
 
     .qualification__sections{
@@ -1140,7 +1157,7 @@ img{
         justify-content: center;
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1286px){
         .container{
             margin-left: auto;
             margin-right: auto;
@@ -1273,7 +1290,7 @@ img{
 }
 
 /* For large devices */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1440px){
     .header,
     .main,
     .footer__container{
